@@ -1,12 +1,15 @@
+# The FizzBuzz problem is a classic test given in coding interviews. The task is simple: Print integers 1 to N, but print “Fizz” if an integer is divisible by 3, “Buzz” if an integer is divisible by 5, and “FizzBuzz” if an integer is divisible by both 3 and 5.
+
 x = 0
-while x <= 20:
+n = 20
+while x <= n:
   if x/3 - int(x/3) == 0 and x > 0:
     if x/4 - int(x/4) == 0:
-      print("foo buzz", x)
+      print("Fizz buzz", x)
     else:
-      print("buzz", x)
-  elif x/4 - int(x/4) == 0 and x > 0:
-      print("foo", x)
+      print("Fizz", x)
+  elif x/5 - int(x/5) == 0 and x > 0:
+      print("Buzz", x)
   elif isinstance(x, int) and x > 0:
     print(x)
   else:
